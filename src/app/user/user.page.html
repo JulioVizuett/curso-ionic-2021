@@ -1,0 +1,22 @@
+<ion-header translucent no-border>
+  <ion-toolbar>
+    <ion-title class="titulo">Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background" fullscreen="true" slot="fixed">
+  <div class="card">
+    <div class="header">
+      <div class="avatar">
+        <img [src] = "user.avatar">
+      </div>
+    </div>
+  </div>
+
+  <div class="card-body">
+    <div class="user-meta ion-text-center">
+      <h3 class="name">{{user.first_name + ' ' + user.last_name}}</h3>
+      <h3 class="country">{{ user.email }}</h3>
+    </div>
+  </div>
+</ion-content>
